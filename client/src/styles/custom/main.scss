@@ -1,0 +1,19 @@
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: calc(10px + 0.3vw);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-size-adjust: auto;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  height: 100%;
+  padding: 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}

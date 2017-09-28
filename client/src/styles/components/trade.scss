@@ -1,0 +1,47 @@
+.trade {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.trade-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  &__header {
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid #D3D3D3;
+  }
+  &__label {
+    width: 60px;
+  }
+  &__item {
+    display: flex;
+    align-items: baseline;
+  }
+  &__input {
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 30px;
+    width: 200px;
+    border: 1px solid #D3D3D3
+  }
+}
+.trade-form-wrap {
+  margin-top: 40px;
+  margin-right: 40px;
+  width: 40%;
+  @media (max-width: 700px) {
+    width: 100%;
+    margin-right: auto;
+  }
+}

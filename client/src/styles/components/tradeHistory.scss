@@ -1,0 +1,52 @@
+.trade-history {
+  margin-top: 30px;
+  background: #fff;
+  &__wrap {
+    margin-right: 20px;
+  }
+  &__header {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 1px solid #d3d3d3
+  }
+}
+.trade-history-list {
+  &__header-item {
+    display: block;
+    width: 20%;
+    padding: 5px 10px;
+  }
+  &__headers {
+    display: flex;
+    width: 100%;
+    text-align: right;
+  }
+  &__scroll-body {
+    display: block;
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 5px;
+    max-height: 500px;
+    overflow: auto;
+  }
+  &__el:nth-child(2n+1) {
+    background-color:#f9f9f9;
+  }
+  &__el {
+    display: flex;
+    width: 100%;
+  }
+  &__item {
+    width: 20%;
+    text-align: right;
+    padding: 5px 10px;
+    @media (max-width: 700px) {
+      padding: 0;
+    }
+  }
+}

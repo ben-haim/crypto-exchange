@@ -1,0 +1,128 @@
+.header {
+  &__topline {
+    height: 40px;
+    background: #2B343C;
+    font-size: calc(8px + 0.3vw);
+  }
+  &__nav {
+    height: 40px;
+    background: #fff;
+    border-bottom: 1px solid #d3d3d3
+  }
+}
+.topline {
+  &__content {
+    display: flex;
+    height: 100%;
+  }
+  &__coin-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+  }
+  &__coin {
+    position: relative;
+    margin-right: 20px;
+    &::after {
+      content: '$';
+      position: absolute;
+      margin-left: 3px;
+      color: #ddd;
+    }
+  }
+  &__coin-name {
+    color: #ddd
+  }
+  &__coin-value {
+    color: #1aba1a
+  }
+}
+.main-nav {
+  display: flex;
+  height: 100%;
+  &__link {
+    margin-right: 10px;
+    line-height: 40px;
+    color: #333;
+    font-weight: 400;
+    &:hover {
+      cursor: pointer;
+      color: #1aba1a;
+    }
+  }
+  &__arrow {
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+  }
+  &__dropdown-list {
+    display: none;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding-left: 0px;
+    width: 150px;
+    background: #2B343C;
+    color: #ddd;
+    z-index: 1;
+  }
+  &__dropdown {
+    position: relative;
+    &:hover .main-nav__link {
+      cursor: pointer;
+      color: #1aba1a;
+      & #icon {
+        fill: #1aba1a;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__dropdown:hover .main-nav__dropdown-list {
+    display: block;
+  }
+}
+
+.dropdown {
+  &__sub {
+  display: none;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 150px;
+  padding-left: 10px;
+  background: #2B343C;
+  min-width: 50vw;
+  z-index: 1;
+  }
+  &__sub-link {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    min-width: 42px;
+    margin: 0 10px 0 10px;
+    text-align: center;
+    color: #ddd;
+    &:hover {
+      background-color: #0f7c0f;
+    }
+  }
+  &__item {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    border-bottom: 1px solid #6d6a6a;
+    cursor: pointer;
+    &:hover {
+      background-color: #0f7c0f;
+    }
+  }
+  &__item:hover .dropdown__sub {
+    display: flex;
+
+  }
+}
